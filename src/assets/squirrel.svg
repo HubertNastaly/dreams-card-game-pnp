@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 569 459" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-155,-203)">
+        <g id="squirrel">
+            <g transform="matrix(1.16741,1.55132,1.55132,-1.16741,-404.451,402.84)">
+                <path d="M371.911,276.391C371.911,348 313.773,406.137 242.165,406.137C170.556,406.137 112.419,348 112.419,276.391L371.911,276.391Z" style="fill:rgb(255,207,110);"/>
+            </g>
+            <g transform="matrix(1.06194,0,0,1.06194,-55.7878,-30.1742)">
+                <path d="M618.496,398.997L553.425,651.347L726.42,454.546L618.496,398.997Z" style="fill:rgb(0,214,97);"/>
+            </g>
+            <g transform="matrix(1.06194,0,0,1.06194,-55.7878,-30.1742)">
+                <path d="M597.864,302.184L616.909,381.539L731.181,345.036L597.864,302.184Z" style="fill:rgb(0,214,97);stroke:rgb(0,116,52);stroke-width:5.89px;"/>
+            </g>
+            <g transform="matrix(1.06194,0,0,1.06194,-55.7878,-30.1742)">
+                <path d="M605.8,603.734L656.587,644.999L659.761,543.424L605.8,603.734Z" style="fill:rgb(0,214,97);"/>
+            </g>
+        </g>
+    </g>
+</svg>

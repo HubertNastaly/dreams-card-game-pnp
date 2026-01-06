@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 568" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-277,-125)">
+        <g id="boat-white">
+            <g transform="matrix(-1.4122,2.60447e-16,2.60447e-16,1.4122,835.006,118.475)">
+                <path d="M371.911,276.391C371.911,348 313.773,406.137 242.165,406.137C170.556,406.137 112.419,348 112.419,276.391L371.911,276.391Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(-7.64877e-17,1.12591,1.12591,7.64877e-17,178.346,80.2556)">
+                <path d="M371.911,276.391C371.911,348 313.773,406.137 242.165,406.137C170.556,406.137 112.419,348 112.419,276.391L371.911,276.391Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.917618,0,0,0.917618,64.0246,54.5111)">
+                <path d="M452.49,143.16L450.755,480.836L232.474,480.101L452.49,143.16Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.917618,0,0,0.917618,61.1248,46.7783)">
+                <path d="M455.747,139.368L456.967,85.702L355.734,123.512L455.747,139.368Z" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>
