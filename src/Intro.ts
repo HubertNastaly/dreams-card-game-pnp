@@ -1,9 +1,10 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
+import { sectionStyles } from "./common";
 
 @customElement('intro-section')
 export class IntroSection extends LitElement {
-  static styles = css`
+  static styles = [sectionStyles, css`
     section {
       position: relative;
       padding: 64px 0;
@@ -97,8 +98,7 @@ export class IntroSection extends LitElement {
       & > g {
         path {
           animation-duration: 1s;
-          animation-delay: 3s;
-          animation-timing-function: ease-out;
+          animation-timing-function: cubic-bezier(0, 0, 0, 1);
           animation-fill-mode: forwards;
 
           transform-origin: center;
@@ -106,23 +106,27 @@ export class IntroSection extends LitElement {
         }
 
         &:nth-child(1) path {
-          transform: translate3d(20%, -30%, 0) rotate(75deg);
+          transform: translate3d(20%, -30%, 0) rotate(435deg);
           animation-name: shape1;
+          animation-delay: 3s;
         }
 
         &:nth-child(2) path {
-          transform: translate3d(50%, -80%, 0) rotate(95deg);
+          transform: translate3d(50%, -80%, 0) rotate(455deg);
           animation-name: shape2;
+          animation-delay: 3.05s;
         }
 
         &:nth-child(3) path {
-          transform: translate3d(-10%, 500%, 0) rotate(145deg);
+          transform: translate3d(-10%, 500%, 0) rotate(505deg);
           animation-name: shape3;
+          animation-delay: 3.1s;
         }
 
         &:nth-child(4) path {
-          transform: translate3d(-300%, -400%, 0) rotate(100deg);
+          transform: translate3d(-300%, -400%, 0) rotate(460deg);
           animation-name: shape4;
+          animation-delay: 3.15s;
         }
       }
     }
@@ -132,7 +136,7 @@ export class IntroSection extends LitElement {
       transform: rotate(35deg);
       animation: 0.3s ease-out 5s popup forwards;
     }
-  `;
+  `];
 
   get squirrel() {
     return html`

@@ -1,5 +1,16 @@
 import { css } from "lit";
 
+export const CONTENT_WIDTH = 960;
+
+export const sectionStyles = css`
+  section {
+    width: 100%;
+    max-width: ${CONTENT_WIDTH}px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+`
+
 export const headingStyles = css`
   h2 {
     font-family: 'Sansita Swashed';

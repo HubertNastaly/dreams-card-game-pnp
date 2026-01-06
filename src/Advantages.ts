@@ -1,12 +1,12 @@
 import { css, html, LitElement } from "lit";
 import { customElement, query } from "lit/decorators.js";
-import { headingStyles, textSectionStyles } from "./common";
+import { headingStyles, sectionStyles, textSectionStyles } from "./common";
 
 const CARD_SIZE = 140;
 
 @customElement('advantages-section')
 export class AdvantagesSection extends LitElement {
-  static styles = [headingStyles, textSectionStyles, css`
+  static styles = [sectionStyles, headingStyles, textSectionStyles, css`
     @keyframes transformCard1 {
       0% {
         transform: perspective(1000px) rotateZ(-3deg) translateZ(0px);

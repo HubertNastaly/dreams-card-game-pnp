@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import { headingStyles } from "./common";
+import { CONTENT_WIDTH, headingStyles } from "./common";
 
 @customElement('download-section')
 export class DownloadSection extends LitElement {
@@ -8,16 +8,14 @@ export class DownloadSection extends LitElement {
     section {
       position: relative;
       color: white;
+      overflow-y: clip;
+      width: 100%;
+      background: linear-gradient(135deg, #00C6FD, #003ACD);
     }
 
-    #background {
-      position: absolute;
-      z-index: -1;
-      left: calc(calc(50vw - 50%) * -1);
-      right: calc(calc(50vw - 50%) * -1);
-      max-width: 100vw;
-      height: 100%;
-      background: linear-gradient(135deg, #00C6FD, #003ACD);
+    #boat-wrapper {
+      margin: 0 auto;
+      width: ${CONTENT_WIDTH}px;
     }
 
     img:nth-of-type(1) {
@@ -46,7 +44,7 @@ export class DownloadSection extends LitElement {
 
     #download-wrapper {
       margin: 0 auto;
-      padding: 32px 0;
+      padding: 64px 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -88,8 +86,9 @@ export class DownloadSection extends LitElement {
   render() {
     return html`
       <section>
-        <div id="background"></div>
-        <img src="src/assets/boat-white.svg" />
+        <div id="boat-wrapper">
+          <img src="src/assets/boat-white.svg" />
+        </div>
         <div id="download-wrapper">
           <h2>Pobierz, wydrukuj i graj!</h2>
           <div id="button-wrapper">
