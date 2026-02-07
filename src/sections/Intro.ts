@@ -82,7 +82,7 @@ export class IntroSection extends LitElement {
     @keyframes popup {
       0% {
         opacity: 0;
-        transform: scale(0) rotate(35deg);
+        transform: scale(0.01) rotate(35deg);
       }
       50% {
         opacity: 0.8;
@@ -90,7 +90,7 @@ export class IntroSection extends LitElement {
       }
       100% {
         opacity: 1;
-        transform: translateY(0) rotate(35deg);
+        transform: rotate(35deg);
       }
     }
 
