@@ -126,7 +126,7 @@ export class AdvantagesSection extends LitElement {
             <img src="src/assets/bullets/circle.svg" /> <span>Zabierzesz ją ze sobą wszędzie - gra składa się z talii 48 kart. To wszystko.</span>
             <img src="src/assets/bullets/rectangle.svg" /> <span>Błyskawiczna rozgrywka pozwala Ci zagrać w dowolnej chwili.</span>
             <img src="src/assets/bullets/triangle.svg" /> <span>Ćwiczy refleks, spostrzegawczość i wyobraźnię.</span>
-            <img src="src/assets/bullets/semicircle.svg" /> <span>Lorem ipsum</span>
+            <img src="src/assets/bullets/semicircle.svg" /> <span>Dorośli mogą rywalizować z młodszymi graczami na równym poziomie.</span>
           </div>
         </div>
         <div id="deck">
