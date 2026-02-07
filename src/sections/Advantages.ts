@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, query } from "lit/decorators.js";
-import { headingStyles, sectionStyles, textSectionStyles } from "./common";
+import { headingStyles, sectionStyles, textSectionStyles } from "../common";
 
 const CARD_SIZE = 140;
 

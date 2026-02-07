@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import { CONTENT_WIDTH, headingStyles } from "./common";
+import { CONTENT_WIDTH, headingStyles } from "../common";
 
 @customElement('download-section')
 export class DownloadSection extends LitElement {

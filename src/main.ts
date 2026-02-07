@@ -1,9 +1,9 @@
 import './style.css'
-import './Rules.ts'
 import './SiteHeader.ts'
-import './Intro.ts'
-import './Advantages.ts'
-import './Download.ts'
+import './sections/Rules.ts'
+import './sections/Intro.ts'
+import './sections/Advantages.ts'
+import './sections/Download.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <site-header></site-header>

@@ -1,9 +1,9 @@
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import './cards/cards';
-import { CARD_SIZE } from './cards/card.styles';
-import { RulesAnimationController } from './cards/RulesAnimationController';
-import { sectionStyles, headingStyles, textSectionStyles } from './common';
+import '../cards/cards';
+import { CARD_SIZE } from '../cards/card.styles';
+import { RulesAnimationController } from '../cards/RulesAnimationController';
+import { sectionStyles, headingStyles, textSectionStyles } from '../common';
 
 @customElement('rules-section')
 export class RulesSection extends LitElement {

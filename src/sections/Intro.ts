@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import { sectionStyles } from "./common";
+import { sectionStyles } from "../common";
 
 @customElement('intro-section')
 export class IntroSection extends LitElement {
