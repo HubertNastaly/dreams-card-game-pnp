@@ -48,6 +48,7 @@ export class AdvantagesSection extends LitElement {
     }
 
     #deck {
+      margin: 0 32px 0 0;
       position: relative;
       z-index: -1;
       width: ${CARD_SIZE}px;
