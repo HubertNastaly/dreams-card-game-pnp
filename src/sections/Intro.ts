@@ -1,10 +1,62 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import { sectionStyles } from "../common";
+import { isSafari, sectionStyles } from "../common";
+
+const getRotatingSquirrelShapesAnimation = () => css`
+  @keyframes shape1 {
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+  }
+
+  @keyframes shape2 {
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+  }
+
+  @keyframes shape3 {
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+  }
+
+  @keyframes shape4 {
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+  }
+
+  #squirrel > g {
+    &:nth-child(1) path {
+      transform: translate3d(20%, -30%, 0) rotate(435deg);
+      animation-name: shape1;
+      animation-delay: 3s;
+    }
+
+    &:nth-child(2) path {
+      transform: translate3d(50%, -80%, 0) rotate(455deg);
+      animation-name: shape2;
+      animation-delay: 3.05s;
+    }
+
+    &:nth-child(3) path {
+      transform: translate3d(-10%, 500%, 0) rotate(505deg);
+      animation-name: shape3;
+      animation-delay: 3.1s;
+    }
+
+    &:nth-child(4) path {
+      transform: translate3d(-300%, -400%, 0) rotate(460deg);
+      animation-name: shape4;
+      animation-delay: 3.15s;
+    }
+  }
+`;
 
 @customElement('intro-section')
 export class IntroSection extends LitElement {
-  static styles = [sectionStyles, css`
+  static styles = [sectionStyles, !isSafari() ? getRotatingSquirrelShapesAnimation() : css``, css`
     section {
       position: relative;
       padding: 64px 0;
@@ -55,30 +107,6 @@ export class IntroSection extends LitElement {
       overflow: visible;
     }
 
-    @keyframes shape1 {
-      100% {
-        transform: translate3d(0, 0, 0) rotate(0deg);
-      }
-    }
-
-    @keyframes shape2 {
-      100% {
-        transform: translate3d(0, 0, 0) rotate(0deg);
-      }
-    }
-
-    @keyframes shape3 {
-      100% {
-        transform: translate3d(0, 0, 0) rotate(0deg);
-      }
-    }
-
-    @keyframes shape4 {
-      100% {
-        transform: translate3d(0, 0, 0) rotate(0deg);
-      }
-    }
-
     @keyframes popup {
       0% {
         opacity: 0;
@@ -103,30 +131,6 @@ export class IntroSection extends LitElement {
 
           transform-origin: center;
           transform-box: fill-box;
-        }
-
-        &:nth-child(1) path {
-          transform: translate3d(20%, -30%, 0) rotate(435deg);
-          animation-name: shape1;
-          animation-delay: 3s;
-        }
-
-        &:nth-child(2) path {
-          transform: translate3d(50%, -80%, 0) rotate(455deg);
-          animation-name: shape2;
-          animation-delay: 3.05s;
-        }
-
-        &:nth-child(3) path {
-          transform: translate3d(-10%, 500%, 0) rotate(505deg);
-          animation-name: shape3;
-          animation-delay: 3.1s;
-        }
-
-        &:nth-child(4) path {
-          transform: translate3d(-300%, -400%, 0) rotate(460deg);
-          animation-name: shape4;
-          animation-delay: 3.15s;
         }
       }
     }
