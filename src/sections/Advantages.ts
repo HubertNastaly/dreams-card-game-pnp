@@ -12,7 +12,7 @@ export class AdvantagesSection extends LitElement {
         transform: perspective(1000px) rotateZ(-3deg) translateZ(0px);
       }
       100% {
-        transform: perspective(1000px) translate3d(-30%, 55%, 60px) rotateX(-28deg) rotateY(-30deg) rotateZ(-3deg);
+        transform: perspective(1000px) translate3d(-50%, 55%, 60px) rotateX(-28deg) rotateY(-30deg) rotateZ(-3deg);
       }
     }
 
@@ -21,7 +21,7 @@ export class AdvantagesSection extends LitElement {
         transform: perspective(1000px) rotateZ(-9deg) translateZ(0px);
       }
       100% {
-        transform: perspective(1000px) translate3d(-40%, -25%, 50px) rotateX(30deg) rotateY(-24deg) rotateZ(3deg);
+        transform: perspective(1000px) translate3d(-60%, -25%, 50px) rotateX(30deg) rotateY(-24deg) rotateZ(3deg);
       }
     }
 
@@ -30,7 +30,7 @@ export class AdvantagesSection extends LitElement {
         transform: perspective(1000px) rotateZ(6deg) translateZ(0px);
       }
       100% {
-        transform: perspective(1000px) translate3d(70%, -50%, 70px) rotateX(29deg) rotateY(28deg) rotateZ(6deg);
+        transform: perspective(1000px) translate3d(50%, -50%, 70px) rotateX(29deg) rotateY(28deg) rotateZ(6deg);
       }
     }
 
@@ -39,7 +39,7 @@ export class AdvantagesSection extends LitElement {
         transform: perspective(1000px) rotateZ(-5deg) translateZ(0px);
       }
       100% {
-        transform: perspective(1000px) translate3d(80%, 50%, 80px) rotateX(-31deg) rotateY(35deg) rotateZ(9deg);
+        transform: perspective(1000px) translate3d(60%, 50%, 80px) rotateX(-31deg) rotateY(35deg) rotateZ(9deg);
       }
     }
 

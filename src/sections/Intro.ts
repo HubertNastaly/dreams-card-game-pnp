@@ -65,6 +65,7 @@ export class IntroSection extends LitElement {
       align-items: center;
       justify-content: center;
       gap: 32px;
+      overflow: hidden;
     }
 
     #frame-placeholder {
