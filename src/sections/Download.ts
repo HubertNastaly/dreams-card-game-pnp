@@ -1,6 +1,7 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import { CONTENT_WIDTH, headingStyles, mobileCss } from "../common";
+import boatUrl from '../assets/boat-white.svg';
 
 @customElement('download-section')
 export class DownloadSection extends LitElement {
@@ -91,7 +92,7 @@ export class DownloadSection extends LitElement {
     return html`
       <section>
         <div id="boat-wrapper">
-          <img src="src/assets/boat-white.svg" />
+          <img src="${boatUrl}" />
         </div>
         <div id="download-wrapper">
           <h2>Pobierz, wydrukuj i graj!</h2>
@@ -102,6 +103,8 @@ export class DownloadSection extends LitElement {
             Niniejsze materiały są udostępniane na licencji <b>Creative Commons BY-NC-ND 4.0</b>.
             <br/>
             Szczegóły licencji można znaleźć tutaj: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>
+            <br />
+            Autor gry: Hubert Nastały
           </small>
         </div>
       </section>

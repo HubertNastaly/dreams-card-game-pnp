@@ -1,5 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
+import logoUrl from './assets/header/logo-dream.webp';
 
 @customElement('site-header')
 export class SiteHeader extends LitElement {
@@ -31,7 +32,7 @@ export class SiteHeader extends LitElement {
   render() {
     return html`
       <header>
-        <img width="300px" src="src/assets/header/logo-dream.webp" alt="Dreams Board Game Logo" />
+        <img width="300px" src="${logoUrl}" alt="Dreams Board Game Logo" />
       </header>
     `;
   }

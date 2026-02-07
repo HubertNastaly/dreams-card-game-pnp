@@ -1,6 +1,14 @@
 import { css, html, LitElement } from "lit";
 import { customElement, query } from "lit/decorators.js";
 import { headingStyles, mobileCss, sectionStyles, textSectionStyles } from "../common";
+import circleUrl from '../assets/bullets/circle.svg';
+import rectangleUrl from '../assets/bullets/rectangle.svg';
+import triangleUrl from '../assets/bullets/triangle.svg';
+import semicircleUrl from '../assets/bullets/semicircle.svg';
+import spaceUrl from '../assets/cards/space.webp';
+import vultureUrl from '../assets/cards/vulture.webp';
+import warriorUrl from '../assets/cards/warrior.webp';
+import rabbitUrl from '../assets/cards/rabbit.webp';
 
 const CARD_SIZE = 140;
 
@@ -138,17 +146,17 @@ export class AdvantagesSection extends LitElement {
         <div class="section-text">
           <h2>Za co możesz polubić tę grę?</h2>
           <div id="advantages-list">
-            <img src="src/assets/bullets/circle.svg" /> <span>Zabierzesz ją ze sobą wszędzie - gra składa się z talii 48 kart. To wszystko.</span>
-            <img src="src/assets/bullets/rectangle.svg" /> <span>Błyskawiczna rozgrywka pozwala Ci zagrać w dowolnej chwili.</span>
-            <img src="src/assets/bullets/triangle.svg" /> <span>Ćwiczy refleks, spostrzegawczość i wyobraźnię.</span>
-            <img src="src/assets/bullets/semicircle.svg" /> <span>Dorośli mogą rywalizować z młodszymi graczami na równym poziomie.</span>
+            <img src="${circleUrl}" /> <span>Zabierzesz ją ze sobą wszędzie - gra składa się z talii 48 kart. To wszystko.</span>
+            <img src="${rectangleUrl}" /> <span>Błyskawiczna rozgrywka pozwala Ci zagrać w dowolnej chwili.</span>
+            <img src="${triangleUrl}" /> <span>Ćwiczy refleks, spostrzegawczość i wyobraźnię.</span>
+            <img src="${semicircleUrl}" /> <span>Dorośli mogą rywalizować z młodszymi graczami na równym poziomie.</span>
           </div>
         </div>
         <div id="deck">
-          <img src="src/assets/cards/space.webp" />
-          <img src="src/assets/cards/vulture.webp" />
-          <img src="src/assets/cards/warrior.webp" />
-          <img src="src/assets/cards/rabbit.webp" />
+          <img src="${spaceUrl}" />
+          <img src="${vultureUrl}" />
+          <img src="${warriorUrl}" />
+          <img src="${rabbitUrl}" />
         </div>
       </section>
     `;

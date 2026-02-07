@@ -4,6 +4,7 @@ import { cardStyles } from './card.styles';
 import { classMap } from 'lit/directives/class-map.js';
 import type { AnimationStage } from './RulesAnimationController';
 import { isSafari } from '../common';
+import backgroundUrl from '../assets/cards/card-background.webp';
 
 const NEUTRAL_GRAY = '#aaa';
 
@@ -39,7 +40,7 @@ export class AnimatedCard extends LitElement {
             'winning': this.isWinning,
             'scaled-up': this.animationStage === 'SHAPE_HIGHLIGHTED' && this.isWinning,
         })}>
-            <img width="100%" height="100%" src="src/assets/cards/card-background.webp" />
+            <img width="100%" height="100%" src="${backgroundUrl}" />
             ${this.svg}
         </div>
     `;

@@ -1,6 +1,7 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import { isSafari, sectionStyles } from "../common";
+import acornUrl from '../assets/acorn.svg';
 
 const getRotatingSquirrelShapesAnimation = () => css`
   @keyframes shape1 {
@@ -194,7 +195,7 @@ export class IntroSection extends LitElement {
         <span id="frame-placeholder"></span>
         <div id="squirrel-wrapper">
           ${this.squirrel}
-          <img id="acorn" width="30px" src="src/assets/acorn.svg" />
+          <img id="acorn" width="30px" src="${acornUrl}" />
         </div>
         <p>
           Czy spotykasz w snach rzeczy i symbole, które pozornie nie mają ze sobą za wiele wspólnego?
