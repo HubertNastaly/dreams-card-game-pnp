@@ -1,9 +1,10 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
+import { mobileCss } from "./common";
 
 @customElement('site-header')
 export class SiteHeader extends LitElement {
-  static styles = css`
+  static styles = [css`
     header {
       width: 100%;
       min-height: 400px;
@@ -16,7 +17,15 @@ export class SiteHeader extends LitElement {
       margin-top: 100px;
       margin-bottom: 80px;
     }
-  `;
+  `, mobileCss`
+    header {
+      min-height: 0;
+    }
+    img {
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
+  `];
 
   render() {
     return html`

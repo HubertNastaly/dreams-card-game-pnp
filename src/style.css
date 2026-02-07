@@ -14,14 +14,29 @@ body {
 intro-section {
   display: block;
   margin-bottom: 64px;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 32px;
+    padding-inline: 16px;
+  }
 }
 
 advantages-section {
   display: block;
   margin-bottom: 128px;
+  padding-inline: 16px;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 64px;
+  }
 }
 
 rules-section {
   display: block;
   margin-bottom: 128px;
+  padding-inline: 16px;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 64px;
+  }
 }

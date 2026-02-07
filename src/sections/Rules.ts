@@ -3,7 +3,7 @@ import { customElement } from 'lit/decorators.js';
 import '../cards/cards';
 import { CARD_SIZE } from '../cards/card.styles';
 import { RulesAnimationController } from '../cards/RulesAnimationController';
-import { sectionStyles, headingStyles, textSectionStyles } from '../common';
+import { sectionStyles, headingStyles, textSectionStyles, mobileCss } from '../common';
 
 @customElement('rules-section')
 export class RulesSection extends LitElement {
@@ -12,6 +12,16 @@ export class RulesSection extends LitElement {
       display: grid;
       grid-template-columns: ${CARD_SIZE}px ${CARD_SIZE}px;
       gap: 16px;
+    }
+
+    section {
+      display: flex;
+    }
+  `, mobileCss`
+    section {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 64px;
     }
   `];
 

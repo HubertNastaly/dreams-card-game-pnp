@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, query } from "lit/decorators.js";
-import { headingStyles, sectionStyles, textSectionStyles } from "../common";
+import { headingStyles, mobileCss, sectionStyles, textSectionStyles } from "../common";
 
 const CARD_SIZE = 140;
 
@@ -43,8 +43,13 @@ export class AdvantagesSection extends LitElement {
       }
     }
 
+    section {
+      display: flex;
+    }
+
     #deck {
       position: relative;
+      z-index: -1;
       width: ${CARD_SIZE}px;
       height: ${CARD_SIZE}px;
       filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.05));
@@ -90,6 +95,16 @@ export class AdvantagesSection extends LitElement {
       column-gap: 16px;
       row-gap: 16px;
     }
+  `, mobileCss`
+    section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 64px;
+    }
+
+    #deck {
+      margin: 0 auto;
+    }
   `];
 
   #viewObserver!: IntersectionObserver;
@@ -98,8 +113,7 @@ export class AdvantagesSection extends LitElement {
   private deck!: HTMLElement;
 
   firstUpdated(): void {
-    this.#viewObserver = new IntersectionObserver((entries, observer) => {
-      console.log({ root: observer.root, rootMargin: observer.rootMargin });
+    this.#viewObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           this.deck.classList.add('explode');

@@ -70,7 +70,7 @@ export class IntroSection extends LitElement {
     #frame-placeholder {
       position: absolute;
       z-index: -1;
-      width: 82%;
+      width: 800px;
       height: 100%;
       display: flex;
       flex-direction: row;
@@ -122,6 +122,10 @@ export class IntroSection extends LitElement {
       }
     }
 
+    #squirrel-wrapper {
+      display: flex;
+    }
+
     #squirrel {
       & > g {
         path {
@@ -139,6 +143,23 @@ export class IntroSection extends LitElement {
       opacity: 0;
       transform: rotate(35deg);
       animation: 0.3s ease-out 5s popup forwards;
+    }
+  `, css`
+    @media (max-width: 600px) {
+      section {
+        padding: 0;
+        flex-direction: column;
+      }
+
+      p {
+        max-width: 100%;
+      }
+
+      #frame-placeholder {
+        &::before, &::after {
+          display: none;
+        }
+      }
     }
   `];
 
@@ -170,7 +191,7 @@ export class IntroSection extends LitElement {
     return html`
       <section>
         <span id="frame-placeholder"></span>
-        <div>
+        <div id="squirrel-wrapper">
           ${this.squirrel}
           <img id="acorn" width="30px" src="src/assets/acorn.svg" />
         </div>

@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import { CONTENT_WIDTH, headingStyles } from "../common";
+import { CONTENT_WIDTH, headingStyles, mobileCss } from "../common";
 
 @customElement('download-section')
 export class DownloadSection extends LitElement {
@@ -44,7 +44,7 @@ export class DownloadSection extends LitElement {
 
     #download-wrapper {
       margin: 0 auto;
-      padding: 64px 0;
+      padding: 64px 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -80,6 +80,10 @@ export class DownloadSection extends LitElement {
         line-height: 1.5em;
         text-align: center;
       }
+    }
+  `, mobileCss`
+    #boat-wrapper {
+      display: none;
     }
   `];
 
