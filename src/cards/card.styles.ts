@@ -11,7 +11,6 @@ export const cardStyles = css`
     width: ${CARD_SIZE}px;
     height: ${CARD_SIZE}px;
 
-    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.05));
 
     transition: transform 0.5s cubic-bezier(0.79,-0.44, 0.57, 0.98), opacity 0.5s ease;
 

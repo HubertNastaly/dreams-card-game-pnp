@@ -1,4 +1,4 @@
-import { html, LitElement, type TemplateResult } from 'lit';
+import { css, html, LitElement, type TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { cardStyles } from './card.styles';
 import { classMap } from 'lit/directives/class-map.js';
@@ -11,7 +11,7 @@ type Location = 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
 
 @customElement('animated-card')
 export class AnimatedCard extends LitElement {
-    static styles = cardStyles;
+    static styles = [cardStyles, !isSafari() ? css`filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.05));` : css``];
 
     @property({ type: String })
     location!: Location;
