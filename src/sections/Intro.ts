@@ -72,7 +72,7 @@ export class IntroSection extends LitElement {
       position: absolute;
       z-index: -1;
       width: 800px;
-      height: 100%;
+      height: 94%;
       display: flex;
       flex-direction: row;
       align-items: flex-end;

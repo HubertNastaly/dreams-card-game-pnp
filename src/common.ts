@@ -13,7 +13,6 @@ export const sectionStyles = css`
   section {
     width: 100%;
     max-width: ${CONTENT_WIDTH}px;
-    margin: 0 auto;
   }
 `
 

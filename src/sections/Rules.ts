@@ -21,7 +21,7 @@ export class RulesSection extends LitElement {
     section {
       flex-direction: column-reverse;
       align-items: center;
-      gap: 64px;
+      gap: 32px;
     }
   `];
 
