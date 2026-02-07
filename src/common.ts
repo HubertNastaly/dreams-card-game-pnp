@@ -37,3 +37,8 @@ export const textSectionStyles = css`
     justify-content: space-between;
   }
 `;
+
+export const isSafari = () => {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return userAgent.includes('safari') && !userAgent.includes('chrome');
+}
