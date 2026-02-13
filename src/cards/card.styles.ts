@@ -114,10 +114,12 @@ export const cardStyles = css`
 
     *:is(rect, circle, path):not([style*="stroke"]) {
       transition: filter 0.5s ease;
+      -webkit-transition: filter 0.5s ease;
     }
 
     img {
       transition: filter 0.5s ease;
+      -webkit-transition: filter 0.5s ease;
     }
   }
 
