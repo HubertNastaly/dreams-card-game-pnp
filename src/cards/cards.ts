@@ -40,7 +40,7 @@ export class AnimatedCard extends LitElement {
             'winning': this.isWinning,
             'scaled-up': this.animationStage === 'SHAPE_HIGHLIGHTED' && this.isWinning,
         })}>
-            <img width="100%" height="100%" src="${backgroundUrl}" />
+            <img width="100%" height="100%" src="${backgroundUrl}" alt="Card Background" />
             ${this.svg}
         </div>
     `;

@@ -196,7 +196,7 @@ export class IntroSection extends LitElement {
         <span id="frame-placeholder"></span>
         <div id="squirrel-wrapper">
           ${this.squirrel}
-          <img id="acorn" width="30px" src="${acornUrl}" />
+          <img id="acorn" width="30px" src="${acornUrl}" alt="Acorn" />
         </div>
         <p>
           Czy spotykasz w snach rzeczy i symbole, które pozornie nie mają ze sobą za wiele wspólnego?

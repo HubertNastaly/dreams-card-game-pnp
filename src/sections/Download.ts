@@ -93,7 +93,7 @@ export class DownloadSection extends LitElement {
     return html`
       <section>
         <div id="boat-wrapper">
-          <img src="${boatUrl}" />
+          <img src="${boatUrl}" alt="Boat" />
         </div>
         <div id="download-wrapper">
           <h2>Pobierz, wydrukuj i graj!</h2>
