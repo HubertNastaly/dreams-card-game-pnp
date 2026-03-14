@@ -56,6 +56,7 @@ export class DownloadSection extends LitElement {
       }
 
       #button-wrapper {
+        display: block;
         margin-bottom: 24px;
         padding: 8px;
         border-radius: 1000px;
@@ -96,9 +97,9 @@ export class DownloadSection extends LitElement {
         </div>
         <div id="download-wrapper">
           <h2>Pobierz, wydrukuj i graj!</h2>
-          <div id="button-wrapper">
+          <a id="button-wrapper" href="/karty.pdf" target="_blank">
             <button>Pobierz</button>
-          </div>
+          </a>
           <small>
             Niniejsze materiały są udostępniane na licencji <b>Creative Commons BY-NC-ND 4.0</b>.
             <br/>
