@@ -147,9 +147,9 @@ export class AdvantagesSection extends LitElement {
           <h2>Za co możesz polubić tę grę?</h2>
           <div id="advantages-list">
             <img src="${circleUrl}" /> <span>Zabierzesz ją ze sobą wszędzie - gra składa się z talii 48 kart. To wszystko.</span>
-            <img src="${rectangleUrl}" /> <span>Błyskawiczna rozgrywka pozwala Ci zagrać w dowolnej chwili.</span>
+            <img src="${rectangleUrl}" /> <span>Proste zasady do wytłumaczenia w kilka minut.</span>
             <img src="${triangleUrl}" /> <span>Ćwiczy refleks, spostrzegawczość i wyobraźnię.</span>
-            <img src="${semicircleUrl}" /> <span>Dorośli mogą rywalizować z młodszymi graczami na równym poziomie.</span>
+            <img src="${semicircleUrl}" /> <span>Błyskawiczna rozgrywka pozwala Ci zagrać w dowolnej chwili.</span>
           </div>
         </div>
         <div id="deck">
