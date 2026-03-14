@@ -17,6 +17,21 @@ export class RulesSection extends LitElement {
     section {
       display: flex;
     }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 1px 8px;
+      border-radius: 8px;
+      font-family: 'Sansita Swashed', 'Oxygen', sans-serif;
+      color: white;
+      background: linear-gradient(90deg, #00adf5, #0073e0);
+      text-decoration: none;
+
+    }
   `, mobileCss`
     section {
       flex-direction: column-reverse;
@@ -39,6 +54,7 @@ export class RulesSection extends LitElement {
         <div class="section-text">
           <h2>Na czym to polega?</h2>
           <p>Gracze po kolei wykładają karty ze wspólnej talii na stół. Karty przedstawiają różnego rodzaju symbole, które pojawiają się we śnie. Każdy z symboli składa się z kolorowych kształtów, przy czym jeden z nich jest wyróżniony obwódką. W chwili gdy któryś z widocznych na stole symboli można zbudować z dostępnych kształtów w obwódkach, należy powiedzieć na głos nazwę tego symbolu - najszybsza osoba zdobywa punkt. Wygrywa gracz, który zbierze najwięcej punktów do wyczerpania kart z talii. </p>
+          <p>Pełna instrukcja w formie pliku PDF do druku jest dostępna <a href="/zasady-gry.pdf" target="_blank">tutaj</a>. Instrukcja została przygotowana do druku dwustronnego i złożenia jej w formie broszury o wymiarach karty, aby wygodnie ją przechowywać razem z talią.</p>
         </div>
       </section>
     `;
