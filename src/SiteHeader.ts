@@ -7,6 +7,7 @@ export class SiteHeader extends LitElement {
   static styles = [css`
     header {
       width: 100%;
+      height: 298px;
       display: flex;
       justify-content: center;
       align-items: center;
