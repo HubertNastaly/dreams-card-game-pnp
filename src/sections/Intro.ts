@@ -100,6 +100,7 @@ export class IntroSection extends LitElement {
     }
 
     p {
+      padding-right: 16px;
       max-width: 400px;
       font-family: 'Oxygen', sans-serif;
     }

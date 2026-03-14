@@ -7,24 +7,19 @@ export class SiteHeader extends LitElement {
   static styles = [css`
     header {
       width: 100%;
-      min-height: 400px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
     img {
-      margin-top: 100px;
-      margin-bottom: 80px;
+      margin-top: 64px;
+      margin-bottom: 64px;
     }
   `, css`
     @media screen and (max-width: 1080px) {
-      header {
-        min-height: 0;
-      }
       img {
-        margin-top: 64px;
-        margin-bottom: 64px;
+        margin-top: 48px;
       }
      }
    `];
