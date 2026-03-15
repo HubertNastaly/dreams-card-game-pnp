@@ -5,10 +5,14 @@ import circleUrl from '../assets/bullets/circle.svg';
 import rectangleUrl from '../assets/bullets/rectangle.svg';
 import triangleUrl from '../assets/bullets/triangle.svg';
 import semicircleUrl from '../assets/bullets/semicircle.svg';
-import spaceUrl from '../assets/cards/space.webp';
-import vultureUrl from '../assets/cards/vulture.webp';
-import warriorUrl from '../assets/cards/warrior.webp';
-import rabbitUrl from '../assets/cards/rabbit.webp';
+import spaceUrl from '../assets/cards/space.avif';
+import spaceFallbackUrl from '../assets/cards/space.webp';
+import vultureUrl from '../assets/cards/vulture.avif';
+import vultureFallbackUrl from '../assets/cards/vulture.webp';
+import warriorUrl from '../assets/cards/warrior.avif';
+import warriorFallbackUrl from '../assets/cards/warrior.webp';
+import rabbitUrl from '../assets/cards/rabbit.avif';
+import rabbitFallbackUrl from '../assets/cards/rabbit.webp';
 
 const CARD_SIZE = 140;
 
@@ -69,31 +73,31 @@ export class AdvantagesSection extends LitElement {
         border-radius: 4px;
 
         position: absolute;
+      }
 
-        &:nth-child(1) {
-          animation: transformCard1 0.5s cubic-bezier(0.87,-0.41, 0, 0.94) forwards;
-          animation-play-state: paused;
-          animation-delay: 0s;
-        }
-        &:nth-child(2) {
-          animation: transformCard2 0.5s cubic-bezier(0.87,-0.41, 0, 0.94) forwards;
-          animation-play-state: paused;
-          animation-delay: 0.05s;
-        }
-        &:nth-child(3) {
-          animation: transformCard3 0.5s cubic-bezier(0.87,-0.41, 0, 0.94) forwards;
-          animation-play-state: paused;
-          animation-delay: 0.1s;
-        }
-        &:nth-child(4) {
-          animation: transformCard4 0.5s cubic-bezier(0.87,-0.41, 0, 0.94) forwards;
-          animation-play-state: paused;
-          animation-delay: 0.15s;
-        }
+      & picture:nth-child(1) > img {
+        animation: transformCard1 0.5s cubic-bezier(0.87,-0.41, 0, 0.94) forwards;
+        animation-play-state: paused;
+        animation-delay: 0s;
+      }
+      & picture:nth-child(2) > img {
+        animation: transformCard2 0.5s cubic-bezier(0.87,-0.41, 0, 0.94) forwards;
+        animation-play-state: paused;
+        animation-delay: 0.05s;
+      }
+      & picture:nth-child(3) > img {
+        animation: transformCard3 0.5s cubic-bezier(0.87,-0.41, 0, 0.94) forwards;
+        animation-play-state: paused;
+        animation-delay: 0.1s;
+      }
+      & picture:nth-child(4) > img {
+        animation: transformCard4 0.5s cubic-bezier(0.87,-0.41, 0, 0.94) forwards;
+        animation-play-state: paused;
+        animation-delay: 0.15s;
       }
     }
 
-    #deck.explode img {
+    #deck.explode picture > img {
       animation-play-state: running;
     }
 
@@ -153,10 +157,22 @@ export class AdvantagesSection extends LitElement {
           </div>
         </div>
         <div id="deck">
-          <img src="${spaceUrl}" alt="Space Card" />
-          <img src="${vultureUrl}" alt="Vulture Card" />
-          <img src="${warriorUrl}" alt="Warrior Card" />
-          <img src="${rabbitUrl}" alt="Rabbit Card" />
+          <picture>
+            <source srcset="${spaceUrl}" />
+            <img src="${spaceFallbackUrl}" alt="Space Card" />
+          </picture>
+          <picture>
+            <source srcset="${vultureUrl}" />
+            <img src="${vultureFallbackUrl}" alt="Vulture Card" />
+          </picture>
+          <picture>
+            <source srcset="${warriorUrl}" />
+            <img src="${warriorFallbackUrl}" alt="Warrior Card" />
+          </picture>
+          <picture>
+            <source srcset="${rabbitUrl}" />
+            <img src="${rabbitFallbackUrl}" alt="Rabbit Card" />
+          </picture>
         </div>
       </section>
     `;

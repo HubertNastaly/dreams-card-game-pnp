@@ -1,6 +1,7 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import logoUrl from './assets/header/logo-dream.webp';
+import logoUrl from './assets/header/logo-dream.avif';
+import logoFallbackUrl from './assets/header/logo-dream.webp';
 
 @customElement('site-header')
 export class SiteHeader extends LitElement {
@@ -28,8 +29,11 @@ export class SiteHeader extends LitElement {
   render() {
     return html`
       <header>
-        <img width="300px" src="${logoUrl}" alt="Dreams Board Game Logo" />
+        <picture>
+          <source srcset="${logoUrl}" />
+          <img width="300px" src=${logoFallbackUrl} alt="Dreams Board Game Logo" />
+        </picture>
       </header>
     `;
   }
-}
+};
