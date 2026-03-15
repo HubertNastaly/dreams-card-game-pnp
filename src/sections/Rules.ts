@@ -24,7 +24,7 @@ export class RulesSection extends LitElement {
 
     a {
       display: inline-block;
-      padding: 1px 8px;
+      padding-inline: 8px;
       border-radius: 8px;
       font-family: 'Sansita Swashed', 'Oxygen', sans-serif;
       color: white;
