@@ -45,7 +45,7 @@ export class DownloadSection extends LitElement {
 
     #download-wrapper {
       margin: 0 auto;
-      padding: 64px 16px;
+      padding: 48px 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -78,9 +78,26 @@ export class DownloadSection extends LitElement {
 
       small {
         max-width: 600px;
+        margin-bottom: 24px;
         font-size: 11px;
         line-height: 1.5em;
         text-align: center;
+      }
+
+      #donation {
+        text-align: center;
+        font-family: 'Sansita Swashed';
+
+        a {
+          margin-left: 4px;
+          display: inline-block;
+          padding-inline: 8px;
+          border-radius: 8px;
+          font-family: 'Sansita Swashed', 'Oxygen', sans-serif;
+          color: #006ade;
+          background: white;
+          text-decoration: none;
+        }
       }
     }
   `, mobileCss`
@@ -107,6 +124,9 @@ export class DownloadSection extends LitElement {
             <br />
             Autor gry: Hubert Nastały
           </small>
+          <span id="donation">
+            Jeśli podoba Ci się ta gra, rozważ wsparcie dla autora! <a href="https://suppi.pl/nastaly-planszowki" target="_blank">Zobacz opcje</a>
+          </span>
         </div>
       </section>
     `;
