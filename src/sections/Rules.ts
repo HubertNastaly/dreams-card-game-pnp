@@ -16,6 +16,7 @@ export class RulesSection extends LitElement {
 
     section {
       display: flex;
+      gap: 24px;
     }
 
     p {
