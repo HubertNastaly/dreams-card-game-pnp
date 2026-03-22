@@ -31,7 +31,6 @@ export class RulesSection extends LitElement {
       color: white;
       background: linear-gradient(90deg, #00adf5, #0073e0);
       text-decoration: none;
-
     }
   `, mobileCss`
     section {

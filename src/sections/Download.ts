@@ -94,8 +94,8 @@ export class DownloadSection extends LitElement {
           padding-inline: 8px;
           border-radius: 8px;
           font-family: 'Sansita Swashed', 'Oxygen', sans-serif;
-          color: #006ade;
-          background: white;
+          color: white;
+          border: 1px solid white;
           text-decoration: none;
         }
       }
