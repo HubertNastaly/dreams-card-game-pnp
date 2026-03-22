@@ -123,6 +123,10 @@ export class DownloadSection extends LitElement {
             Szczegóły licencji można znaleźć tutaj: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>
             <br />
             Autor gry: Hubert Nastały
+            <br />
+            <br />
+            Plik został przygotowany docelowo do druku w formacie A3.
+            <br />Dobrze sprawdzi się papier o wysokiej gramaturze, np. 300-350g/m2.
           </small>
           <span id="donation">
             Jeśli podoba Ci się ta gra, rozważ wsparcie dla autora! <a href="https://suppi.pl/nastaly-planszowki" target="_blank">Zobacz opcje</a>
